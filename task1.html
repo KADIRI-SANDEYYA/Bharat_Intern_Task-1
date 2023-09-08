@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task1.css">
+    <title>Content Management Tool</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Content Management Tool</h1>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="input-card">
+            <form id="contentForm">
+                <div class="input-row">
+                    <label for="title">Article Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Enter the article title">
+                </div>
+                <div class="input-row">
+                    <label for="content">Article Content:</label>
+                    <textarea id="content" name="content" placeholder="Write your article content here"></textarea>
+                </div>
+                <div class="input-row">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" placeholder="Choose an image">
+                </div>
+                <div class="input-row">
+                    <label for="video">Attach Video :</label>
+                    <input type="file" id="video" name="video" accept="video/*" placeholder="Choose a video">
+                </div>
+                <div class="input-row">
+                    <button type="button" id="submitBtn">Publish Article</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="articleSection" class="article-display"></section>
+    </main>
+
+    <script src="task1.js"></script>
+</body>
+</html>
